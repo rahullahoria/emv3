@@ -5,7 +5,7 @@ class Chapter{
 
 	public static function getChapterList($subjectID){
 
-		require_once '../libs/DB_Controller.class.php';
+		require_once './libs/DB_Controller.class.php';
 		
 		$DBObj = new DB_Controller();
 		$response = $DBObj->query("SELECT * FROM chapters WHERE sub_id = '$subjectID' ;");
@@ -16,6 +16,6 @@ class Chapter{
 
 }
 
-print_r( Chapter::getChapterList("1"));
+//print_r( Chapter::getChapterList("1"));
 
 ?>

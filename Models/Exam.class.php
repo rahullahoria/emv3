@@ -5,7 +5,7 @@ class Exam{
 
 	public static function getExamList(){
 
-		require_once '../libs/DB_Controller.class.php';
+		require_once './libs/DB_Controller.class.php';
 		
 		$DBObj = new DB_Controller();
 		$response = $DBObj->query("SELECT * FROM exams ;");
@@ -16,6 +16,6 @@ class Exam{
 
 }
 
-print_r( Exam::getExamList());
+//print_r( Exam::getExamList());
 
 ?>

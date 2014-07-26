@@ -5,7 +5,7 @@ class Subject{
 
 	public static function getSubjectList($examID){
 
-		require_once '../libs/DB_Controller.class.php';
+		require_once './libs/DB_Controller.class.php';
 		
 		$DBObj = new DB_Controller();
 		$response = $DBObj->query("SELECT * FROM subjects WHERE exam_id = '$examID' ;");
@@ -16,6 +16,6 @@ class Subject{
 
 }
 
-print_r( Subject::getSubjectList("1"));
+//print_r( Subject::getSubjectList("1"));
 
 ?>
