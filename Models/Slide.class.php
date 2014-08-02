@@ -1,4 +1,5 @@
 <?
+//this is slide
 class Slide{
 	private $slideID;
 	private $chapterID;
@@ -7,9 +8,9 @@ class Slide{
 	private $notes;
 	private $slideNo;
 
-	public function __construct($chapterID){
+	public function __construct($chapterID,$slideNo){
 		$this->chapterID = $chapterID;
-		$this->slideNo = 1;
+		$this->slideNo = $slideNo;
 		$this->slideID = $this->getSlideID();
 		$this->setSlide();
 
